@@ -1,0 +1,115 @@
+/* pages/cart/cart.wxss */
+.address {
+  padding: 20rpx;
+}
+.address button {
+  width: 60%;
+}
+.address-wrp {
+  display: flex;
+  padding: 20rpx;
+  border-bottom: 1px solid #eaeaea;
+}
+.address-wrp .address-name {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.address-wrp .phone {
+  flex: 3;
+  text-align: right;
+}
+.title {
+  padding: 20rpx;
+  font-size: 36rpx;
+  color: var(--themeColor);
+  border-bottom: 1px solid #eaeaea;
+}
+.cart-list .cart-item {
+  display: flex;
+  padding: 10rpx;
+  border-bottom: 1px solid #eaeaea;
+}
+.cart-list .cart-item .check {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart-list .cart-item .img {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart-list .cart-item .img image {
+  width: 60%;
+}
+.cart-list .cart-item .detail-info {
+  flex: 4;
+}
+.cart-list .cart-item .detail-info .text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-bottom: 15rpx;
+}
+.cart-list .cart-item .detail-info .price-info {
+  display: flex;
+  justify-content: space-between;
+}
+.cart-list .cart-item .detail-info .price-info .price {
+  color: var(--themeColor);
+  font-size: 36rpx;
+}
+.cart-list .cart-item .detail-info .price-info .options {
+  display: flex;
+  align-items: center;
+}
+.cart-list .cart-item .detail-info .price-info .options .box {
+  width: 55rpx;
+  height: 55rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #eaeaae;
+}
+.cart-list .cart-item .detail-info .price-info .options .number {
+  margin: 0 10rpx;
+}
+.bottom-bar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  height: 90rpx;
+}
+.bottom-bar .ck {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom-bar .count {
+  flex: 5;
+  text-align: right;
+  padding-right: 10rpx;
+}
+.bottom-bar .count .price-text {
+  color: var(--themeColor);
+  font-weight: 600;
+  font-size: 36rpx;
+}
+.bottom-bar .topay {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: var(--themeColor);
+  font-size: 36rpx;
+}

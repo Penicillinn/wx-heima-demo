@@ -1,0 +1,75 @@
+<view class="header">
+  <view class="avatar" wx:if="{{userInfo.nickName}}">
+    <view class="bgImg">
+      <image src="{{userInfo.avatarUrl}}" mode=""></image>
+    </view>
+    <view class="topImg">
+      <image src="{{userInfo.avatarUrl}}" mode=""></image>
+      <text>{{userInfo.nickName}}</text>
+    </view>
+  </view>
+  <view class="btn-login" wx:else>
+    <navigator url="/pages/login/login" class="btn">登陆</navigator>
+  </view>
+</view>
+<view class="detail-info-wrp">
+  <view class="goods_fav">
+    <navigator class="fav-item" url="/pages/collect/collect?type=0">
+      <text class="fav-number">{{favCount}}</text>
+      <text class="fav-text">商品收藏</text>
+    </navigator>
+    <navigator url="/pages/collect/collect?type=1" class="fav-item">
+      <text class="fav-number">0</text>
+      <text class="fav-text">品牌收藏</text>
+    </navigator>
+    <navigator url="/pages/collect/collect?type=2" class="fav-item">
+      <text class="fav-number">0</text>
+      <text class="fav-text">店铺收藏</text>
+    </navigator>
+    <navigator url="/pages/collect/collect?type=3" class="fav-item">
+      <text class="fav-number">0</text>
+      <text class="fav-text">我的足迹</text>
+    </navigator>
+  </view>
+  <view class="my-order">
+    <view class="order-title">
+      <text>我的订单</text>
+    </view>
+    <view class="order-list">
+      <navigator url="/pages/order/order?type=1" class="order-item">
+        <text class="iconfont iconsingle"></text>
+        <text class="order-text">全部订单</text>
+      </navigator>
+      <navigator url="/pages/order/order?type=2" class="order-item">
+        <text class="iconfont iconfukuantongzhi"></text>
+        <text class="order-text">待付款</text>
+      </navigator>
+      <navigator url="/pages/order/order?type=3" class="order-item">
+        <text class="iconfont iconshouhuodizhi"></text>
+        <text class="order-text">收货地址</text>
+      </navigator>
+      <view class="order-item">
+        <text class="iconfont icontuikuan"></text>
+        <text class="order-text">退款/退货</text>
+      </view>
+    </view>
+  </view>
+  <view class="address">
+    <text>收货地址管理</text>
+  </view>
+  <view class="other">
+    <view class="text">
+      <text>联系客服</text>
+      <text>400-618-4000</text>
+    </view>
+    <navigator url="/pages/feedback/feedback" class="text">
+      <text>意见反馈</text>
+    </navigator>
+    <view class="text">
+      <text>关于我们</text>
+    </view>
+  </view>
+  <view class="share">
+    <text>把应用推荐给其他人</text>
+  </view>
+</view>

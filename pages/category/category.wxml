@@ -1,0 +1,25 @@
+<view class="cates">
+  <search></search>
+  <view class="zj-cates-wrp">
+    <scroll-view scroll-y class="zj-left-wrp">
+      <view bindtap="cateChange" data-index="{{index}}" class="left-item {{index === currentIndex?'active':''}}" wx:for="{{cateLeftList}}" wx:key="{{index}}">
+        <text>{{item}}</text>
+      </view>
+    </scroll-view>
+    <scroll-view scroll-y class="zj-right-wrp">
+      <view class="zj-right-item" wx:for="{{cateRightList}}" wx:for-item="item1" wx:for-index="index1" wx:key="{{index1}}">
+        <view class="zj-item-title">
+          <text>/ {{item1.cat_name}} /</text>
+        </view>
+        <view class="zj-item-content">
+          <navigator url="/pages/goods_list/goods_list?cid={{item2.cat_id}}" class="zj-list-item" wx:for="{{item1.children}}" wx:for-item="item2" wx:for-index="index2" wx:key="{{index2}}">
+            <image mode="widthFix" src="{{item2.cat_icon}}" />
+            <view class="txt">
+              <text>{{item2.cat_name}}</text>
+            </view>
+          </navigator>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

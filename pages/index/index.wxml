@@ -1,0 +1,25 @@
+<search></search>
+<swiper class="zj-swiper" indicator-dots autoplay circular>
+  <swiper-item wx:for="{{swiperList}}" wx:key="{{ item.goods_id }}">
+    <navigator open-type="navigate" url="{{item.navigator_url}}">
+      <image class="" src="{{ item.image_src }}" mode="widthFix"></image>
+    </navigator>
+  </swiper-item>
+</swiper>
+<view class="zj-cate">
+  <navigator wx:for="{{cateList}}" wx:key="{{item.name}}" class="zj-catenav" url="{{ item.navigator_url }}" open-type="navigate">
+    <image mode="widthFix" src="{{item.image_src}}" />
+  </navigator>
+</view>
+<view class="zj-floor-wrp">
+  <view class="zj-floor-item" wx:for="{{floorList}}" wx:for-item="item1" wx:for-index="index1" wx:key="{{item1.floor_title.name}}">
+    <view class="zj-floor-title">
+      <image class="" src="{{item1.floor_title.image_src}}" mode="widthFix"></image>
+    </view>
+    <view class="zj-floor-content">
+      <navigator wx:for="{{item1.product_list}}" wx:for-item="item2" wx:for-index="index2" wx:key="{{item2.name}}" url="" open-type="navigate">
+        <image src="{{item2.image_src}}" mode="{{index2 === 0?'widthFix' : 'scaleToFill'}}"></image>
+      </navigator>
+    </view>
+  </view>
+</view>

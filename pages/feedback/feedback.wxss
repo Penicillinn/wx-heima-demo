@@ -1,0 +1,46 @@
+/* pages/feedback/feedback.wxss */
+page {
+  background-color: #eaeaea;
+  color: #666;
+}
+.pro-cate {
+  padding: 10rpx;
+}
+.pro-cate .cate-title {
+  font-size: 26rpx;
+}
+.pro-cate .cate-list {
+  padding: 13rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.pro-cate .cate-list .cate-item {
+  margin: 5rpx;
+  padding: 10rpx 40rpx;
+  background-color: #fff;
+}
+.content {
+  padding: 10rpx;
+}
+.content textarea {
+  background-color: #fff;
+  width: 100%;
+  padding: 20rpx;
+}
+.content .addImg {
+  display: flex;
+  background-color: #fff;
+  padding: 20rpx;
+  flex-wrap: wrap;
+}
+.content .addImg .addiocn {
+  width: 100rpx;
+  height: 100rpx;
+  background-color: #eaeaea;
+  border-radius: 10rpx;
+  border: 1px solid #eaeaea;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 36rpx;
+  margin-top: 10rpx;
+}

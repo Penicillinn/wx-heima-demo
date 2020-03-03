@@ -1,0 +1,9 @@
+<view class="serach-header">
+  <input type="text" placeholder="请输入商品名称" class="inp" bindinput="inputChange" value="{{inpValue}}" />
+  <button type="default" size="mini" wx:if="{{isButtonShow}}" bindtap="cancel">取消</button>
+</view>
+<view class="search-list">
+  <navigator url="/pages/goods_detail/main?goods_id={{item.goods_id}}" class="search-item" wx:for="{{searchList}}" wx:key="{{index}}">
+    {{ item.goods_name }}
+  </navigator>
+</view>

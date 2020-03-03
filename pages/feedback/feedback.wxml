@@ -1,0 +1,18 @@
+<taps tapsList="{{tapsList}}" bindtapsChange="tapsChange">
+  <view class="pro-cate">
+    <view class="cate-title">问题总类</view>
+    <view class="cate-list">
+      <view class="cate-item">功能建议</view>
+      <view class="cate-item">购买遇到的问题</view>
+      <view class="cate-item">性能问题</view>
+      <view class="cate-item">其他</view>
+    </view>
+  </view>
+  <view class="content">
+    <textarea name="textvalue" placeholder="请描述您的问题" id="" cols="30" rows="10"></textarea>
+    <view class="addImg">
+      <view class="addiocn" bindtap="chooseImg">+</view>
+      <imgIcon wx:for="{{chooseImgList}}" wx:key="{{index}}" imgSrc="{{item}}" bindtap="clear" data-index="{{index}}"></imgIcon>
+    </view>
+  </view>
+</taps>

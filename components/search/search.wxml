@@ -1,0 +1,7 @@
+<view class="zj-search-wrp">
+  <navigator url="../../pages/search/search" open-type="navigate">
+    <view class="zj-search">
+      <text>搜索</text>
+    </view>
+  </navigator>
+</view>

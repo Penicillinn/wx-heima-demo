@@ -1,0 +1,127 @@
+/* pages/user/user.wxss */
+page {
+  background-color: #eaeaea;
+  color: #666;
+}
+.header {
+  height: 45vh;
+  background-color: var(--themeColor);
+  position: relative;
+  overflow: hidden;
+}
+.header .avatar {
+  width: 100%;
+  height: 100%;
+}
+.header .avatar .bgImg {
+  width: 100%;
+  height: 100%;
+  filter: blur(10rpx);
+}
+.header .avatar .bgImg image {
+  height: 100%;
+}
+.header .avatar .topImg {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header .avatar .topImg image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.header .avatar .topImg text {
+  color: #fff;
+  font-weight: 700;
+  margin-top: 20rpx;
+}
+.header .btn-login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .btn-login .btn {
+  color: green;
+  padding: 20rpx;
+  border: 1px solid green;
+  border-radius: 10rpx;
+}
+.detail-info-wrp {
+  width: 90%;
+  position: relative;
+  top: -30rpx;
+  left: 50%;
+  transform: translate(-50%);
+}
+.detail-info-wrp .goods_fav {
+  display: flex;
+  background-color: #fff;
+}
+.detail-info-wrp .goods_fav .fav-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10rpx 0;
+}
+.detail-info-wrp .goods_fav .fav-item .fav-number {
+  color: var(--themeColor);
+}
+.detail-info-wrp .goods_fav .fav-item .fav-text {
+  font-size: 26rpx;
+}
+.detail-info-wrp .my-order {
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+.detail-info-wrp .my-order .order-title {
+  padding: 20rpx;
+  border-bottom: 1px solid #eaeaea;
+}
+.detail-info-wrp .my-order .order-list {
+  display: flex;
+}
+.detail-info-wrp .my-order .order-list .order-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rpx 0;
+}
+.detail-info-wrp .my-order .order-list .order-item .iconfont {
+  color: var(--themeColor);
+  font-size: 40rpx;
+}
+.detail-info-wrp .address {
+  margin: 20rpx 0;
+  background-color: #fff;
+  padding: 20rpx;
+}
+.detail-info-wrp .other {
+  background-color: #fff;
+}
+.detail-info-wrp .other .text {
+  padding: 20rpx;
+}
+.detail-info-wrp .other .text:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+}
+.detail-info-wrp .other .text:nth-child(2) {
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+.detail-info-wrp .share {
+  padding: 20rpx;
+  margin-top: 20rpx;
+  background-color: #fff;
+}

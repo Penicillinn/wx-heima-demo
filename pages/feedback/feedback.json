@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "taps": "../../components/taps/taps",
+    "imgIcon": "../../components/imgIcon/imgIcon"
+  },
+  "navigationBarTitleText": "意见反馈"
+}

@@ -1,0 +1,19 @@
+<!-- 收藏页面实现 -->
+<taps tapsList="{{tapsList}}" bindtapsChange="tapsChange">
+  <view class="cate">
+    <text class="active">全部</text>
+    <text>正在热卖</text>
+    <text>即将上映</text>
+  </view>
+  <view class="fav-list">
+    <navigator url="/pages/goods_detail/main?goods_id={{item.goods_id}}" class="goods-item" wx:for="{{favList}}" wx:key="{{index}}">
+      <view class="item-left">
+        <image mode="widthFix" src="{{item.goods_small_logo?item.goods_small_logo:'http://image5.suning.cn/uimg/b2c/newcatentries/0000000000-000000000160455569_1_400x400.jpg'}}" />
+      </view>
+      <view class="item-right">
+        <view class="item-title">{{ item.goods_name }}</view>
+        <view class="item-price">￥{{ item.goods_price }}</view>
+      </view>
+    </navigator>
+  </view>
+</taps>

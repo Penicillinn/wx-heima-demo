@@ -1,0 +1,4 @@
+<view class="img-wrp">
+  <img src="{{imgSrc}}" alt="" />
+  <icon class="" type="clear" size="23"></icon>
+</view>

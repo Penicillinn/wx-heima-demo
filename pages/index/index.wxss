@@ -1,0 +1,42 @@
+.zj-swiper {
+  width: 100%;
+  height: 338rpx;
+}
+.zj-cate {
+  display: flex;
+}
+.zj-cate .zj-catenav {
+  padding: 20rpx;
+  flex: 1;
+}
+.zj-cate .zj-catenav image {
+  width: 100%;
+}
+.zj-floor-wrp .zj-floor-item .zj-floor-title image {
+  width: 100%;
+}
+.zj-floor-wrp .zj-floor-item .zj-floor-content {
+  overflow: hidden;
+  padding: 10rpx;
+}
+.zj-floor-wrp .zj-floor-item .zj-floor-content navigator {
+  float: left;
+  width: 33.33%;
+}
+.zj-floor-wrp .zj-floor-item .zj-floor-content navigator:nth-last-child(-n + 4) {
+  height: 27.72711207vw;
+  border-left: 10rpx solid white;
+}
+.zj-floor-wrp .zj-floor-item .zj-floor-content navigator:nth-child(2) {
+  border-bottom: 10rpx solid white;
+}
+.zj-floor-wrp .zj-floor-item .zj-floor-content navigator:nth-child(3) {
+  border-bottom: 10rpx solid white;
+}
+.zj-floor-wrp .zj-floor-item .zj-floor-content navigator image {
+  height: 100%;
+  width: 100%;
+}
+.zj-floor-wrp .zj-floor-item:nth-child(1) .zj-floor-title {
+  margin-top: 10rpx;
+}

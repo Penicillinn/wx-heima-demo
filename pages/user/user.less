@@ -1,0 +1,129 @@
+/* pages/user/user.wxss */
+page {
+  background-color: #eaeaea;
+  color: #666;
+}
+.header {
+  height: 45vh;
+  background-color: var(--themeColor);
+  position: relative;
+  overflow: hidden;
+  .avatar {
+    width: 100%;
+    height: 100%;
+    .bgImg {
+      width: 100%;
+      height: 100%;
+      filter: blur(10rpx);
+      image {
+        height: 100%;
+      }
+    }
+    .topImg {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      image {
+        width: 150rpx;
+        height: 150rpx;
+        border-radius: 50%;
+      }
+      text {
+        color: #fff;
+        font-weight: 700;
+        margin-top: 20rpx;
+      }
+    }
+  }
+  .btn-login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .btn {
+      color: green;
+      padding: 20rpx;
+      border: 1px solid green;
+      border-radius: 10rpx;
+    }
+  }
+}
+.detail-info-wrp {
+  width: 90%;
+  position: relative;
+  top: -30rpx;
+  left: 50%;
+  transform: translate(-50%);
+  .goods_fav {
+    display: flex;
+    background-color: #fff;
+    .fav-item {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 10rpx 0;
+      .fav-number {
+        color: var(--themeColor);
+      }
+      .fav-text {
+        font-size: 26rpx;
+      }
+    }
+  }
+  .my-order {
+    margin-top: 20rpx;
+    background-color: #fff;
+    .order-title {
+      padding: 20rpx;
+      border-bottom: 1px solid #eaeaea;
+    }
+    .order-list {
+      display: flex;
+      .order-item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10rpx 0;
+        .iconfont {
+          color: var(--themeColor);
+          font-size: 40rpx;
+        }
+        .order-text {
+        }
+      }
+    }
+  }
+  .address {
+    margin: 20rpx 0;
+    background-color: #fff;
+    padding: 20rpx;
+  }
+  .other {
+    background-color: #fff;
+    .text {
+      padding: 20rpx;
+      &:nth-child(1) {
+        display: flex;
+        justify-content: space-between;
+      }
+      &:nth-child(2) {
+        border-top: 1px solid #eaeaea;
+        border-bottom: 1px solid #eaeaea;
+      }
+    }
+  }
+  .share {
+    padding: 20rpx;
+    margin-top: 20rpx;
+    background-color: #fff;
+  }
+}

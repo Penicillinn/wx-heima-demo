@@ -1,0 +1,10 @@
+<view class="wrp">
+  <view class="taps">
+    <view bindtap="tapsChange" data-id="{{index}}" class="taps-item {{ item.isActive?'active':'' }}" wx:for="{{tapsList}}" wx:key="{{index}}">
+      {{item.title}}
+    </view>
+  </view>
+  <view class="content">
+    <slot></slot>
+  </view>
+</view>

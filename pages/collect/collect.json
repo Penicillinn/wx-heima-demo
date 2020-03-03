@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "taps": "../../components/taps/taps"
+  },
+  "navigationBarTitleText": "收藏"
+}

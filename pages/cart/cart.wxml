@@ -1,0 +1,66 @@
+<block wx:if="{{!address.userName}}">
+  <view class="address">
+    <button type="primary" bindtap="chooseAddress" plain="{{true}}">获取收货地址</button>
+  </view>
+</block>
+<block wx:if="{{address.userName}}">
+  <view class="address-wrp">
+    <view class="address-name">
+      <view class="name">收货人：{{address.userName}}</view>
+      <view class="address1">{{address.all}}</view>
+    </view>
+    <view class="phone">{{address.telNumber}}</view>
+  </view>
+</block>
+<view class="title">
+  <tetx>购物车</tetx>
+</view>
+<view class="cart-list">
+  <view class="cart-item" wx:for="{{cartList}}" wx:key="{{index}}">
+    <view class="check">
+      <checkbox-group bindchange="toggleCheck" data-id="{{item.goods_id}}">
+        <checkbox checked="{{item.checked}}"></checkbox>
+      </checkbox-group>
+    </view>
+    <view class="img">
+      <image mode="widthFix" src="{{item.goods_small_logo}}"></image>
+    </view>
+    <view class="detail-info">
+      <view class="text">{{item.goods_name}}</view>
+      <view class="price-info">
+        <view class="price">￥{{item.goods_price}}</view>
+        <view class="options">
+          <view class="box" bindtap="numberEdit" data-opration="{{ -1 }}" data-id="{{item.goods_id}}">
+            -
+          </view>
+          <view class="number">{{item.num}}</view>
+          <view class="box" bindtap="numberEdit" data-opration="{{ 1 }}" data-id="{{item.goods_id}}">
+            +
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="bottom-bar">
+  <view class="ck">
+    <checkbox-group bindchange="toggleAllCheck">
+      <checkbox checked="{{isAllChecked}}">全选</checkbox>
+    </checkbox-group>
+  </view>
+  <view class="count">
+    <view class="total">
+      合计：￥
+      <text class="price-text">{{totalPrice}}</text>
+    </view>
+    <view class="text-info">
+      <text>包含运费</text>
+    </view>
+  </view>
+  <navigator url="/pages/pay/pay" class="topay">
+    <text>结算({{totalCount}})</text>
+  </navigator>
+</view>
+<block wx:if="{{!cartList.length}}">
+  <image mode="widthFix" src="http://hbimg.b0.upaiyun.com/e1b1467beea0a9c7d6a56b32bac6d7e5dcd914f7c3e6-YTwUd6_fw658"></image>
+</block>

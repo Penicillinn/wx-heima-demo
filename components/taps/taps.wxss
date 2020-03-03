@@ -1,0 +1,15 @@
+/* components/taps/taps.wxss */
+.taps {
+  display: flex;
+}
+.taps-item {
+  flex: 1;
+  padding: 15rpx 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.active {
+  border-bottom: 1px solid var(--themeColor);
+  color: var(--themeColor);
+}
